@@ -1,0 +1,10 @@
+spring:
+  rabbitmq:
+    host: 121.4.16.58 # 主机名
+    port: 5672 # 端口
+    virtual-host: / # 虚拟主机
+    username: test # 用户名
+    password: test # 密码
+    listener:
+      simple:
+        prefetch: 0 # 每次只能获取一条消息，处理完成才能获取下一个消息
